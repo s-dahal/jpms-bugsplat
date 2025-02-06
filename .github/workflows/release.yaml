@@ -5,11 +5,6 @@ run-name: "Releasing ${{ github.event.repository.name }} #${{github.run_number}}
 # Trigger workflow manually
 on:
   workflow_dispatch:
-    inputs:
-      release_version:
-        type: string
-        description: "(Optional) Custom Release Version"
-        required: false
 
 env:
   BRANCH_NAME: ${{ github.ref_name }}
@@ -37,4 +32,3 @@ jobs:
         with:
           version_type: 'pre-release'
           github_token: ${{secrets.GITHUB_TOKEN}}
-          release_version: ${{ github.event.inputs.release_version }}
