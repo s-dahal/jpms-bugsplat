@@ -26,12 +26,4 @@ jobs:
     name: General Build
     uses: ikmdev/maven-jpms-test-build-action/.github/workflows/build.yaml@main
 
-  build-job:
-    name: Build Job
-    runs-on: ubuntu-24.04
-    steps:          
-      - name: Build IKMDEV Code
-        uses: ikmdev/maven-clean-install-build-action@v3
-        with:
-          branch_name: ${{github.ref_name}}
     

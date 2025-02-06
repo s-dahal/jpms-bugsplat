@@ -1,3 +1,5 @@
+name: SemVer Release Workflow
+
 run-name: "Releasing ${{ github.event.repository.name }} #${{github.run_number}}"
 
 # Trigger workflow manually
