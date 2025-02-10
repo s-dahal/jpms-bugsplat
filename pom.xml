@@ -168,7 +168,7 @@
 							<target>
 								<echo message="renaming sources file" />
 								<copy file="${project.build.directory}/dependency/bugsplat-java-${core.artifact.version}-sources.jar"
-									  tofile="${project.build.directory}/bugsplat-java-${core.artifact.version}-${core.artifact.release}-sources.jar" />
+									  tofile="${project.build.directory}/bugsplat-java-${project.version}-sources.jar" />
 							</target>
 						</configuration>
 					</execution>
@@ -182,7 +182,7 @@
 							<target>
 								<echo message="renaming javadoc file" />
 								<copy file="${project.build.directory}/dependency/bugsplat-java-${core.artifact.version}-javadoc.jar"
-									  tofile="${project.build.directory}/bugsplat-java-${core.artifact.version}-${core.artifact.release}-javadoc.jar" />
+									  tofile="${project.build.directory}/bugsplat-java-${project.version}-javadoc.jar" />
 							</target>
 						</configuration>
 					</execution>
