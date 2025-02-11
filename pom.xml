@@ -14,12 +14,11 @@
 	<groupId>dev.ikm.jpms</groupId>
 	<artifactId>bugsplat-java</artifactId>
 	<packaging>jar</packaging>
-	<version>${core.artifact.version}-${core.artifact.release}</version>
+	<version>0.0.0-r4-SNAPSHOT</version>
 
 	<properties>
 		<!-- change release here-->
 		<core.artifact.version>0.0.0</core.artifact.version>
-		<core.artifact.release>r4</core.artifact.release>
 
 		<maven.moditect.plugin>1.2.2.Final</maven.moditect.plugin>
 	</properties>
