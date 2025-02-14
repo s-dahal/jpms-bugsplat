@@ -14,7 +14,7 @@
 	<groupId>dev.ikm.jpms</groupId>
 	<artifactId>bugsplat-java</artifactId>
 	<packaging>jar</packaging>
-	<version>0.0.0-r5-SNAPSHOT</version>
+	<version>0.0.0-r5</version>
 
 	<properties>
 		<!-- change release here-->
