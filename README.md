@@ -1,4 +1,4 @@
-# jpms-$1
+# $TITLE
 This repository contains a Java Platform Module System (JPMS) compliant version of the ANTLR4 runtime library. The goal of this project is to provide a modularized version of the ANTLR4 runtime that can be easily integrated into Java projects using JPMS.
 
 ## Features
@@ -17,13 +17,13 @@ Add the following dependency to your pom.xml:
 <dependency>
     <groupId>dev.ikm.jpms</groupId>
 	<artifactId>antlr4-runtime</artifactId>
-    <version>${lajpms-$1-version}</version>
+    <version>${la$TITLE-version}</version>
 </dependency>
 ```
 
 Add the following dependency to your build.gradle:
 ```groovy
-implementation 'dev.ikm.jpms:antlr4-runtime:${lajpms-$1-version}'
+implementation 'dev.ikm.jpms:antlr4-runtime:${la$TITLE-version}'
 ```
 
 In your module descriptor (module-info.java), declare the dependency on the antlr4.runtime module:
