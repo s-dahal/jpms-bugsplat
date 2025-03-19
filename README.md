@@ -36,6 +36,6 @@ module your.module.name {
 
 
 ## Issues and Contributions
-Technical and non-technical issues can be reported to the [Issue Tracker](https://github.com/ikmdev/repo-seed/issues).
+Technical and non-technical issues can be reported to the [Issue Tracker](https://github.com/ikmdev/bugsplat/issues).
 
 Contributions can be submitted via pull requests. Please check the [contribution guide](doc/how-to-contribute.md) for more details.
