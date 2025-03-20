@@ -16,14 +16,18 @@ Add the following dependency to your pom.xml:
 ```xml
 <dependency>
     <groupId>dev.ikm.jpms</groupId>
-	<artifactId>bugsplat</artifactId>
+	<artifactId>bugsplat-java</artifactId>
     <version>${latest-jpms-bugsplat-version}</version>
 </dependency>
 ```
 
 Add the following dependency to your build.gradle:
 ```groovy
+<<<<<<< HEAD
 implementation 'dev.ikm.jpms:bugsplate:${latest-jpms-bugsplat-version}'
+=======
+implementation 'dev.ikm.jpms:bugsplat-java:${latest-jpms-bugsplat-version}'
+>>>>>>> 258f3be8606398be86bc2bae3d5b3a62c6555dc8
 ```
 
 In your module descriptor (module-info.java), declare the dependency on the jpms-bugsplat module:
@@ -36,6 +40,6 @@ module your.module.name {
 
 
 ## Issues and Contributions
-Technical and non-technical issues can be reported to the [Issue Tracker](https://github.com/ikmdev/bugsplat/issues).
+Technical and non-technical issues can be reported to the [Issue Tracker](https://github.com/ikmdev/jpms-bugsplat/issues).
 
 Contributions can be submitted via pull requests. Please check the [contribution guide](doc/how-to-contribute.md) for more details.
