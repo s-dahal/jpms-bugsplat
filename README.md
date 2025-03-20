@@ -23,18 +23,14 @@ Add the following dependency to your pom.xml:
 
 Add the following dependency to your build.gradle:
 ```groovy
-<<<<<<< HEAD
-implementation 'dev.ikm.jpms:bugsplate:${latest-jpms-bugsplat-version}'
-=======
 implementation 'dev.ikm.jpms:bugsplat-java:${latest-jpms-bugsplat-version}'
->>>>>>> 258f3be8606398be86bc2bae3d5b3a62c6555dc8
 ```
 
 In your module descriptor (module-info.java), declare the dependency on the jpms-bugsplat module:
 
 ```java
 module your.module.name {
-    requires dev.ikm.jpms.activej.bytebuf;
+    requires dev.ikm.jpms.bugsplatsoftware;
 }
 ```
 

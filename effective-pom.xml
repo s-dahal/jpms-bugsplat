@@ -16,7 +16,7 @@
   <parent>
     <groupId>dev.ikm.build</groupId>
     <artifactId>parent</artifactId>
-    <version>1.57.0</version>
+    <version>1.58.0</version>
     <relativePath />
   </parent>
   <groupId>dev.ikm.jpms</groupId>
@@ -56,6 +56,7 @@
     <build-helper-maven-plugin.version>3.6.0</build-helper-maven-plugin.version>
     <core.artifact.release>r6</core.artifact.release>
     <core.artifact.version>0.0.0</core.artifact.version>
+    <java.version>23</java.version>
     <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
     <maven-license-plugin.version>4.1</maven-license-plugin.version>
     <maven-mojo-license-plugin.version>2.5.0</maven-mojo-license-plugin.version>
@@ -77,6 +78,7 @@
     <maven.project-info-reports-plugin.version>3.8.0</maven.project-info-reports-plugin.version>
     <maven.site.plugin>3.21.0</maven.site.plugin>
     <maven.sonarqube.version>5.0.0.4389</maven.sonarqube.version>
+    <maven.version>3.9.9</maven.version>
     <maven.versions.plugin>2.18.0</maven.versions.plugin>
     <maven.wrapper-plugin.version>3.3.2</maven.wrapper-plugin.version>
     <nexus-staging-maven-plugin.version>1.7.0</nexus-staging-maven-plugin.version>
@@ -99,9 +101,6 @@
   </repositories>
   <pluginRepositories>
     <pluginRepository>
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
@@ -150,6 +149,19 @@
                 </rules>
               </configuration>
             </execution>
+            <execution>
+              <id>enforce-java</id>
+              <goals>
+                <goal>enforce</goal>
+              </goals>
+              <configuration>
+                <rules>
+                  <requireJavaVersion>
+                    <version>23</version>
+                  </requireJavaVersion>
+                </rules>
+              </configuration>
+            </execution>
           </executions>
         </plugin>
         <plugin>
@@ -164,7 +176,11 @@
               </ignoreVersion>
               <ignoreVersion>
                 <type>regex</type>
-                <version>.+-M.+</version>
+                <version>.+-(M|m).+</version>
+              </ignoreVersion>
+              <ignoreVersion>
+                <type>regex</type>
+                <version>.+-(RC|rc).+</version>
               </ignoreVersion>
               <ignoreVersion>
                 <type>regex</type>
@@ -502,7 +518,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.4.1</version>
         <executions>
           <execution>
             <id>default-jar</id>
@@ -515,7 +531,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.11.0</version>
+        <version>3.13.0</version>
         <executions>
           <execution>
             <id>default-compile</id>
@@ -535,7 +551,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.1.2</version>
+        <version>3.2.5</version>
         <executions>
           <execution>
             <id>default-test</id>
