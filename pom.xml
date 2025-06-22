@@ -15,7 +15,7 @@
 	<artifactId>bugsplat-java</artifactId>
     <name>Bugsplat Java</name>
 	<packaging>jar</packaging>
-	<version>0.0.0-r8-SNAPSHOT</version>
+	<version>0.0.0-r8</version>
 
 	<properties>
 		<!-- change release here-->
